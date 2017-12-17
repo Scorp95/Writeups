@@ -2,8 +2,6 @@ import re
 import binascii
 import requests
 r=requests.get("http://bitmap01.3dsctf.org:8010/")
-allcolors = re.search(r'<tr>(.*)</tr>',r.text)
-allcolors=allcolors.group(1)
 list=re.findall('"\#([^"]*)"', r.text)
 with open('flag', 'wb') as program:
 	for l in list:
