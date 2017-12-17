@@ -10,7 +10,7 @@ with open('flag', 'wb') as program:
 		program.write(binascii.unhexlify(l))
 program.close()
 
-#root@Scorp:~# python img2file.py
+#root@Scorp:~# python Bit_Map.py
 #root@Scorp:~# chmod +x flag && ./flag
 #3DS{H1dd3n_1n_7ru3_C0l0r5}
 
